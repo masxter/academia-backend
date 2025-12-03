@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 // Segredo do JWT (coloque no .env depois)
 const JWT_SECRET = process.env.JWT_SECRET || 'chave_secreta_super_segura';
 
-router.post('/auth/login', async (req, res) => {
+router.post('/login', async (req, res) => {
   const { email, senha } = req.body;
 
   try {
