@@ -4,7 +4,8 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "start": "node src/server.js && node src/scripts/criarAdmin.js",
+    "start": "node src/server.js",
+    "seed": "node src/scripts/criarAdmin.js",
     "prisma": "prisma",
     "migrate": "prisma migrate deploy"
   },
